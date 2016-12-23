@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="Apple.cs" />
     <Compile Include="Item.cs" />
-    <Compile Include="Kiwi.cs" />
     <Compile Include="Orange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

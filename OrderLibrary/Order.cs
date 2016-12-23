@@ -16,17 +16,15 @@ namespace OrderLibrary
 
         public int _apple_Quantity;
         public int _orange_Quantity;
-        public int _kiwi_Quantity;
 
         //constructor which set whether the order enjoys a discount or not
         // and the quantity of each item in that order
 
-        public Order(bool hasDiscount, int apple_Quantity, int orange_Quantity, int kiwi_Quantity = 0)
+        public Order(bool hasDiscount, int apple_Quantity, int orange_Quantity)
         {
             this._hasDiscount = hasDiscount;
             this._apple_Quantity = apple_Quantity;
             this._orange_Quantity = orange_Quantity;
-            this._kiwi_Quantity = kiwi_Quantity;
         }
 
         //return a list of Item, which could contain Apple or Orange, (or Kiwi for unit testing)
@@ -45,13 +43,7 @@ namespace OrderLibrary
                 Item item = new Orange();
                 lstItems.Add(item);
             }
-
-            for (int i = 0; i < _kiwi_Quantity; i++)
-            {
-                Item item = new Kiwi();
-                lstItems.Add(item);
-            }
-
+            
             return lstItems;
         }
     }

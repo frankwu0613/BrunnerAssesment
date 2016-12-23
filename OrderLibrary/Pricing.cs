@@ -33,14 +33,9 @@ namespace OrderLibrary
                 {
                     countApple++; // count the number of apples in the order
                 }
-                else if (item.Name == "Orange")
-                {
-                    countOrange++; // count the number of oranges in the order
-                }
                 else
                 {
-                    throw new Exception("Wrong item in the cart!");
-                    // if there is an item neither "Apple" nor "Orange", throw an exception
+                    countOrange++; // count the number of oranges in the order
                 }
             }
 

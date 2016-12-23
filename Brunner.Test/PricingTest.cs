@@ -27,19 +27,6 @@ namespace Brunner.Test
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void TestGetTotalValue_WrongItemInOrderObject_GeneralExceptionExpected()
-        {
-            //arrage
-            Order order = new Order(false, 3, 3, 2);
-
-            //act
-            decimal actual = Pricing.GetTotalValue(order);
-
-            //assert is handled by ExpectedException
-        }
-
-        [TestMethod]
         public void TestGetTotalValue_NormalObjectWithDiscount_PriceMatch()
         {
             //arrage
